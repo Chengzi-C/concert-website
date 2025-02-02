@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演唱会查询系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="home-button">
+            <button onclick="window.location.href='index.html'">返回主页</button>
+        </div>
+        <h1>演唱会查询系统</h1>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="输入艺人名称或城市...">
+            <button onclick="searchConcerts()">搜索</button>
+        </div>
+
+        <div class="filters">
+            <select id="cityFilter">
+                <option value="">所有城市</option>
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="广州">广州</option>
+                <option value="深圳">深圳</option>
+            </select>
+            <select id="dateFilter">
+                <option value="">所有日期</option>
+                <option value="thisMonth">本月</option>
+                <option value="nextMonth">下月</option>
+                <option value="future">未来三个月</option>
+            </select>
+        </div>
+
+        <div id="concertList" class="concert-list">
+            <!-- 演唱会列表将通过 JavaScript 动态生成 -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
