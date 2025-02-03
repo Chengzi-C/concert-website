@@ -91,6 +91,25 @@ h1 {
     font-weight: bold;
 }
 
+.venue-icon,
+.date-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    opacity: 0.6;
+}
+
+.venue-icon {
+    background: url('path/to/venue-icon.svg') no-repeat center;
+    background-size: contain;
+}
+
+.date-icon {
+    background: url('path/to/date-icon.svg') no-repeat center;
+    background-size: contain;
+}
+
 .home-button {
     position: absolute;
     top: 20px;
