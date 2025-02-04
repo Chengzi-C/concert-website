@@ -4,7 +4,7 @@ const concerts = [
         id: 1,
         artist: "周杰伦",
         title: "嘉年华世界巡回演唱会",
-        city: "三亚（已开售）",
+        city: "三亚（已官宣）",
         venue: "三亚市体育中心白鹭体育场",
         date: "2025.03.28-03.30",
         price: "600-2000",
@@ -14,7 +14,7 @@ const concerts = [
         id: 2,
         artist: "陈奕迅",
         title: "FEAR AND DREAMS 巡回演唱会",
-        city: "重庆（已开售）",
+        city: "重庆（已官宣）",
         venue: "华熙LIVE·鱼洞·场馆",
         date: "2025.03.28-04.06",
         price: "599-1999",
@@ -24,7 +24,7 @@ const concerts = [
         id: 3,
         artist: "五月天",
         title: "[ 回到那一天 ]25周年巡回演唱会",
-        city: "悉尼（已开售）",
+        city: "悉尼（已官宣）",
         venue: "Sydney Accor Stadium",
         date: "2025.02.22 周六 19:30",
         price: "610-2998",
@@ -34,7 +34,7 @@ const concerts = [
         id: 4,
         artist: "张学友",
         title: "水井坊·第一坊呈献 张学友60+巡回演唱会",
-        city: "杭州（已开售）",
+        city: "杭州（已官宣）",
         venue: "杭州奥体中心体育馆",
         date: "2025.02.07-02.09",
         price: "480-2280",
@@ -44,7 +44,7 @@ const concerts = [
         id: 5,
         artist: "林俊杰",
         title: "JJ20 FINAL LAP世界巡回演唱会",
-        city: "巴黎（售票中）",
+        city: "巴黎（已官宣）",
         venue: "巴黎拉德芳斯体育馆",
         date: "2025.03.22 周六 20:00",
         price: "870-2970",
@@ -54,7 +54,7 @@ const concerts = [
         id: 6,
         artist: "李荣浩",
         title: "「黑马」世界巡回演唱会",
-        city: "南京（售票中）",
+        city: "南京（已官宣）",
         venue: "南京奥体中心体育场",
         date: "2025.03.29 周六 19:00",
         price: "380-1280",
@@ -64,7 +64,7 @@ const concerts = [
         id: 7,
         artist: "邓紫棋",
         title: "G.E.M. 邓紫棋 I AM GLORIA 世界巡回演唱会",
-        city: "新加坡（售票中）",
+        city: "新加坡（已官宣）",
         venue: "新加坡国家体育场 National Stadium, Singapore",
         date: "2025.03.01 周六 19:30",
         price: "938-1988",
@@ -74,7 +74,7 @@ const concerts = [
         id: 8,
         artist: "华晨宇",
         title: "2025华晨宇火星演唱会",
-        city: "福州（售票中）",
+        city: "福州（已官宣）",
         venue: "福州海峡奥林匹克体育中心体育场",
         date: "2025.03.08 周六 19:30",
         price: "399-1599",
@@ -83,18 +83,18 @@ const concerts = [
     {
         id: 9,
         artist: "汪苏泷",
-        title: "大娱乐家 跨年演唱会",
-        city: "广州（已结束）",
-        venue: "宝能广州国际体育演艺中心",
-        date: "2024.12.30-2025.01.01",
-        price: "380-2280",
+        title: "十万伏特 2025巡回演唱会",
+        city: "北京（已官宣）",
+        venue: "待定",
+        date: "2025.03.21-03.23",
+        price: "380-1380",
         image: "https://example.com/wsl.jpg"
     },
     {
         id: 10,
         artist: "十个勤天",
         title: "种下一个未来-十个勤天巡回演唱会",
-        city: "福州（售票中）",
+        city: "福州（已官宣）",
         venue: "福州海峡奥林匹克体育中心体育场",
         date: "2025.02.22-02.23",
         price: "388-1588",
@@ -104,7 +104,7 @@ const concerts = [
         id: 11,
         artist: "张杰",
         title: "2025张杰未·LIVE—「开往1982」演唱会",
-        city: "澳门（售票中）",
+        city: "澳门（已官宣）",
         venue: "银河综艺馆",
         date: "2025.03.07-03.09",
         price: "480-1680",
@@ -114,7 +114,7 @@ const concerts = [
         id: 12,
         artist: "张远",
         title: "2025 张远「白」巡回演唱会",
-        city: "新加坡（售票中）",
+        city: "新加坡（已官宣）",
         venue: "星宇表演艺术中心 The Star Performing Arts Centre",
         date: "2025.02.21 周五 20:00",
         price: "525-1435",
@@ -124,7 +124,7 @@ const concerts = [
         id: 13,
         artist: "王心凌",
         title: "SUGAR HIGH 2.0 世界巡回演唱会",
-        city: "合肥（售票中）",
+        city: "合肥（已官宣）",
         venue: "合肥少荃体育中心体育馆",
         date: "2025.04.19-04.20",
         price: "480-1680",
@@ -134,7 +134,7 @@ const concerts = [
         id: 14,
         artist: "孙燕姿",
         title: "《就在日落以后》巡回演唱会",
-        city: "上海（售票中）",
+        city: "上海（已官宣）",
         venue: "上海体育场",
         date: "2025.04.26/04.28",
         price: "480-1680",
@@ -144,7 +144,7 @@ const concerts = [
         id: 15,
         artist: "毛不易",
         title: "「冒险精神」巡回演唱会",
-        city: "苏州（售票中）",
+        city: "苏州（已官宣）",
         venue: "苏州奥林匹克体育中心体育馆",
         date: "2025.02.15 周六 19:00",
         price: "480-1580",
@@ -154,7 +154,7 @@ const concerts = [
         id: 16,
         artist: "周兴哲（Eric）",
         title: "Odyssey旅程巡回演唱会",
-        city: "厦门（售票中）",
+        city: "厦门（已官宣）",
         venue: "厦门奥林匹克体育中心-凤凰体育馆",
         date: "2025.03.29 周六 19:00",
         price: "480-1180",
@@ -164,7 +164,7 @@ const concerts = [
         id: 17,
         artist: "张惠妹",
         title: "ASMR MAXXX巡回演唱会",
-        city: "成都（售票中）",
+        city: "成都（已官宣）",
         venue: "成都东安湖体育公园主体育场",
         date: "2025.03.22 周六 19:00",
         price: "380-1380",
@@ -173,18 +173,18 @@ const concerts = [
     {
         id: 18,
         artist: "许嵩",
-        title: "许嵩演唱会",
-        city: "广州（洽谈中）",
-        venue: "待定",
-        date: "待定",
-        price: "待定",
+        title: "2025「呼吸之野」巡回演唱会",
+        city: "长沙（已官宣）",
+        venue: "长沙贺龙体育场",
+        date: "2025.04.12 周六",
+        price: "318-1618",
         image: "https://example.com/xs.jpg"
     },
     {
         id: 19,
         artist: "刀郎",
         title: "山歌响起的地方·刀郎2025巡回演唱会",
-        city: "上海（售票中）",
+        city: "上海（已官宣）",
         venue: "梅赛德斯-奔驰文化中心",
         date: "2025.03.01-03.02",
         price: "480-1280",
@@ -194,7 +194,7 @@ const concerts = [
         id: 20,
         artist: "王力宏",
         title: "「最好的地方」巡回演唱会",
-        city: "南昌（售票中）",
+        city: "南昌（已官宣）",
         venue: "南昌国际体育中心体育馆",
         date: "2025.03.15-03.16",
         price: "480-1680",
@@ -214,7 +214,7 @@ const concerts = [
         id: 22,
         artist: "凤凰传奇",
         title: "「吉祥如意」2025巡回演唱会",
-        city: "台州（售票中）",
+        city: "台州（已官宣）",
         venue: "台州市体育中心体育场",
         date: "2025.04.11-04.13",
         price: "380-1380",
@@ -224,7 +224,7 @@ const concerts = [
         id: 23,
         artist: "张韶涵",
         title: "2025张韶涵世界巡回演唱会",
-        city: "广州（售票中）",
+        city: "广州（已官宣）",
         venue: "广州大学城体育中心体育场",
         date: "2025.04.26 周六 19:00",
         price: "388-1288",
@@ -239,6 +239,56 @@ const concerts = [
         date: "时间待定",
         price: "待定",
         image: "https://example.com/tnt.jpg"
+    },
+    {
+        id: 25,
+        artist: "周传雄",
+        title: "2025「念念不忘·再遇见」巡回演唱会",
+        city: "太原（已官宣）",
+        venue: "山西体育中心体育场",
+        date: "2025.04.12 周六 19:30",
+        price: "380-1080",
+        image: "https://example.com/zcx.jpg"
+    },
+    {
+        id: 26,
+        artist: "陈楚生",
+        title: "\"荒芜之境\"2025巡回演唱会",
+        city: "重庆（已官宣）",
+        venue: "华熙LIVE·鱼洞·场馆",
+        date: "2025.03.01 周六 19:00",
+        price: "380-1580",
+        image: "https://example.com/ccs.jpg"
+    },
+    {
+        id: 27,
+        artist: "王源",
+        title: "2025王源演唱会",
+        city: "天津（未官宣）",
+        venue: "洽谈中",
+        date: "时间待定",
+        price: "待定",
+        image: "https://example.com/wy.jpg"
+    },
+    {
+        id: 28,
+        artist: "鹿晗",
+        title: "2025鹿晗演唱会",
+        city: "北京（未官宣）",
+        venue: "洽谈中",
+        date: "时间待定",
+        price: "待定",
+        image: "https://example.com/lh.jpg"
+    },
+    {
+        id: 29,
+        artist: "黄子弘凡",
+        title: "「除了快乐禁止入内」2025巡回演唱会",
+        city: "澳门（已官宣）",
+        venue: "银河综艺馆",
+        date: "2025.02.22-23",
+        price: "待定",
+        image: "https://example.com/hzhf.jpg"
     }
 ];
 
@@ -307,4 +357,14 @@ function displayConcerts(concertList) {
 // 页面加载时显示所有演唱会
 window.onload = () => {
     displayConcerts(concerts);
-}; 
+};
+
+function showEnlargedImage() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'block';
+}
+
+// 点击遮罩层关闭图片
+document.getElementById('imageModal').onclick = function() {
+    this.style.display = 'none';
+} 

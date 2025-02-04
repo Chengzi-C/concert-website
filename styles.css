@@ -251,4 +251,56 @@ h1 {
     .schedule-location {
         padding-left: 0;
     }
+}
+
+/* 修改右上角图片的样式，添加点击放大效果 */
+.corner-image {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer; /* 添加鼠标指针样式 */
+}
+
+.corner-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.corner-image img:hover {
+    transform: scale(1.1); /* 悬停时轻微放大 */
+}
+
+/* 添加放大遮罩层 */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.image-modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* 在小屏幕上调整图片大小 */
+@media (max-width: 768px) {
+    .corner-image img {
+        width: 60px;
+    }
 } 
