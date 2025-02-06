@@ -284,11 +284,21 @@ const concerts = [
         id: 29,
         artist: "黄子弘凡",
         title: "「除了快乐禁止入内」2025巡回演唱会",
-        city: "澳门（已官宣）",
+        city: "澳门（已售罄）",
         venue: "银河综艺馆",
         date: "2025.02.22-23",
-        price: "待定",
+        price: "480-1280",
         image: "https://example.com/hzhf.jpg"
+    },
+    {
+        id: 30,
+        artist: "沙一汀EL",
+        title: "「VERSE II」2025巡回演唱会",
+        city: "上海（已官宣）",
+        venue: "蜚声上海PHASE LIVE HOUSE SHANGHAI",
+        date: "2025.02.14 周五",
+        price: "298-468",
+        image: "https://example.com/syt.jpg"
     }
 ];
 

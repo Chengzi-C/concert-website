@@ -288,11 +288,21 @@ const concerts = [
         id: 29,
         artist: "黄子弘凡",
         title: "「除了快乐禁止入内」2025巡回演唱会",
-        city: "澳门",
+        city: "澳门（已售罄）",
         venue: "银河综艺馆",
         date: "2025.02.22-23",
-        price: "待定",
+        price: "480-1280",
         image: "https://example.com/hzhf.jpg"
+    },
+    {
+        id: 30,
+        artist: "沙一汀EL",
+        title: "「VERSE II」2025巡回演唱会",
+        city: "上海",
+        venue: "蜚声上海PHASE LIVE HOUSE SHANGHAI",
+        date: "2025.02.14 周五",
+        price: "298-468",
+        image: "https://example.com/syt.jpg"
     }
 ];
 
@@ -450,11 +460,14 @@ const tourDates = {
         { city: "南昌（未官宣）", venue: "洽谈中", date: "时间待定" }
     ],
     29: [
-        { city: "澳门（已官宣）", venue: "银河综艺馆", date: "2025.02.22-23" },
-        { city: "西安（未官宣）", venue: "待定", date: "2025.03.22-23" },
-        { city: "杭州（未官宣）", venue: "洽谈中", date: "时间待定" },
-        { city: "重庆（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "澳门（已售罄）", venue: "银河综艺馆", date: "2025.02.22-23" },
+        { city: "西安（已官宣）", venue: "西安奥体中心体育馆", date: "2025.03.22 周六" },
+        { city: "杭州（已官宣）", venue: "杭州奥体中心体育馆", date: "2025.04.19-20" },
+        { city: "重庆（已官宣）", venue: "华熙LIVE·鱼洞·场馆", date: "2025.05.10 周六" },
         { city: "郑州（未官宣）", venue: "洽谈中", date: "时间待定" }
+    ],
+    30: [
+        { city: "上海（已官宣）", venue: "蜚声上海PHASE LIVE HOUSE SHANGHAI", date: "2025.02.14 周五" }
     ]
 };
 
