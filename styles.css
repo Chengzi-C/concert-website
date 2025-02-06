@@ -232,24 +232,142 @@ h1 {
 
 /* 添加响应式设计 */
 @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filters select {
+        width: 100%;
+    }
+
+    .concert-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .concert-card {
+        padding: 12px;
+    }
+
+    .concert-card h3 {
+        font-size: 16px;
+    }
+
+    .concert-card p {
+        font-size: 14px;
+    }
+
     .concert-detail {
-        padding: 20px;
-        margin-top: 20px;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+
+    .concert-header h1 {
+        font-size: 20px;
+    }
+
+    .concert-header .price {
+        font-size: 16px;
+    }
+
+    .tour-schedule h2 {
+        font-size: 18px;
     }
 
     .schedule-item {
         grid-template-columns: 1fr;
-        gap: 10px;
+        padding: 15px;
     }
 
     .schedule-date {
+        font-size: 16px;
         border-right: none;
         border-bottom: 1px solid #e8e8e8;
-        padding-bottom: 10px;
+        padding: 0 0 10px 0;
+        margin-bottom: 10px;
     }
 
     .schedule-location {
         padding-left: 0;
+    }
+
+    .schedule-location h3 {
+        font-size: 16px;
+    }
+
+    .schedule-location p {
+        font-size: 14px;
+    }
+
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+    }
+
+    .home-button button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .corner-image {
+        top: 10px;
+        right: 10px;
+    }
+
+    .corner-image img {
+        width: 50px;
+        height: auto;
+    }
+
+    .image-modal img {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+}
+
+/* 超小屏幕适配 */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .concert-card h3 {
+        font-size: 14px;
+    }
+
+    .concert-card p {
+        font-size: 12px;
+    }
+
+    .corner-image img {
+        width: 40px;
     }
 }
 
