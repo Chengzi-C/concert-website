@@ -299,6 +299,16 @@ const concerts = [
         date: "2025.02.14 周五",
         price: "298-468",
         image: "https://example.com/syt.jpg"
+    },
+    {
+        id: 31,
+        artist: "薛之谦",
+        title: "\"天外来物\"海外体育场·返场演唱会",
+        city: "新加坡（已官宣）",
+        venue: "新加坡国家体育场 National Stadium, Singapore",
+        date: "2025.02.14-15",
+        price: "617-2037",
+        image: "https://example.com/xzq.jpg"
     }
 ];
 
@@ -367,14 +377,4 @@ function displayConcerts(concertList) {
 // 页面加载时显示所有演唱会
 window.onload = () => {
     displayConcerts(concerts);
-};
-
-function showEnlargedImage() {
-    const modal = document.getElementById('imageModal');
-    modal.style.display = 'block';
-}
-
-// 点击遮罩层关闭图片
-document.getElementById('imageModal').onclick = function() {
-    this.style.display = 'none';
-} 
+}; 
