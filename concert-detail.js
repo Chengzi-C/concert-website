@@ -217,11 +217,11 @@ const concerts = [
     {
         id: 22,
         artist: "凤凰传奇",
-        title: "2025鸟巢演唱会",
-        city: "北京（已官宣）",
-        venue: "国家体育场鸟巢",
-        date: "2025.05.23-06.01",
-        price: "待定",
+        title: "「吉祥如意」2025巡回演唱会",
+        city: "台州（已官宣）",
+        venue: "台州市体育中心体育场",
+        date: "2025.04.11-04.13",
+        price: "380-1380",
         image: "https://example.com/fhcq.jpg"
     },
     {
@@ -453,16 +453,6 @@ const concerts = [
         date: "2025.02.22 周六 19:30",
         price: "66-922",
         image: "https://example.com/hyb.jpg"
-    },
-    {
-        id: 46,
-        artist: "凤凰传奇",
-        title: "2025鸟巢演唱会",
-        city: "北京（已官宣）",
-        venue: "国家体育场鸟巢",
-        date: "2025.05.23-06.01",
-        price: "待定",
-        image: "https://example.com/fhcq.jpg"
     }
 ];
 
@@ -645,7 +635,9 @@ const tourDates = {
     ],
     22: [
         { city: "台州（已官宣）", venue: "台州市体育中心体育场", date: "2025.04.11-04.13" },
-        { city: "苏州（已官宣）", venue: "苏州奥林匹克体育中心体育场", date: "2025.03.28-03.30" }
+        { city: "苏州（已官宣）", venue: "苏州奥林匹克体育中心体育场", date: "2025.03.28-03.30" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.23-05.25" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.30-06.01" }
     ],
     23: [
         { city: "广州（已官宣）", venue: "广州大学城体育中心体育场", date: "2025.04.26 周六 19:00" }
@@ -763,10 +755,6 @@ const tourDates = {
     ],
     45: [
         { city: "长沙（已官宣）", venue: "湖南国际会展中心·芒果馆", date: "2025.02.22 周六 19:30" }
-    ],
-    46: [
-        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.23-05.25" },
-        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.30-06.01" }
     ]
 };
 
@@ -812,4 +800,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('concertDetail').innerHTML = detailHTML;
     document.title = `${concert.artist} - ${concert.title} | 演唱会详情`;
-}); 
+});
+
+// 添加清除搜索状态的函数
+function clearSearchState() {
+    sessionStorage.removeItem('searchState');
+} 

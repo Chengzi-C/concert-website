@@ -122,7 +122,8 @@ const tourDates = {
         { city: "陶喆", venue: "2025 Soul Power II 世界巡回演唱会", city: "福州（已官宣）", date: "时间待定", price: "380-1380", image: "https://example.com/dt.jpg" }
     ],
     22: [
-        { city: "凤凰传奇", venue: "「吉祥如意」2025巡回演唱会", city: "台州（已官宣）", date: "2025.04.11-04.13", price: "380-1380", image: "https://example.com/fhcq.jpg" }
+        { city: "台州（已官宣）", venue: "台州市体育中心体育场", date: "2025.04.11-04.13" },
+        { city: "苏州（已官宣）", venue: "苏州奥林匹克体育中心体育场", date: "2025.03.28-03.30" }
     ],
     23: [
         { city: "张韶涵", venue: "2025张韶涵世界巡回演唱会", city: "广州（已官宣）", date: "2025.04.26 周六 19:00", price: "388-1288", image: "https://example.com/zsh.jpg" }
@@ -186,10 +187,6 @@ const tourDates = {
     ],
     45: [
         { city: "长沙（已官宣）", venue: "湖南国际会展中心·芒果馆", date: "2025.02.22 周六 19:30" }
-    ],
-    46: [
-        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.23-05.25" },
-        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.30-06.01" }
     ]
 };
 
@@ -644,19 +641,21 @@ const concerts = [
         date: "2025.02.22 周六 19:30",
         price: "66-922",
         image: "https://example.com/hyb.jpg"
-    },
-    {
-        id: 46,
-        artist: "凤凰传奇",
-        title: "2025鸟巢演唱会",
-        city: "北京（已官宣）",
-        venue: "国家体育场鸟巢",
-        date: "2025.05.23-06.01",
-        price: "待定",
-        image: "https://example.com/fhcq.jpg"
     }
 ];
 
+// 添加保存搜索状态的函数
+function saveSearchState() {
+    const searchState = {
+        searchTerm: document.getElementById('searchInput').value,
+        cityFilter: document.getElementById('cityFilter').value,
+        dateFilter: document.getElementById('dateFilter').value,
+        scrollPosition: window.pageYOffset
+    };
+    sessionStorage.setItem('searchState', JSON.stringify(searchState));
+}
+
+// 修改 searchConcerts 函数
 function searchConcerts() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const cityFilter = document.getElementById('cityFilter').value;
@@ -685,6 +684,7 @@ function searchConcerts() {
     });
 
     displayConcerts(filteredConcerts);
+    saveSearchState(); // 保存搜索状态
 }
 
 function filterByDate(concertDate, filterValue) {
@@ -719,7 +719,10 @@ function displayConcerts(concertList) {
     concertList.forEach(concert => {
         const concertCard = document.createElement('div');
         concertCard.className = 'concert-card';
-        concertCard.onclick = () => window.location.href = `concert-detail.html?id=${concert.id}`;
+        concertCard.onclick = () => {
+            saveSearchState(); // 保存搜索状态
+            window.location.href = `concert-detail.html?id=${concert.id}`;
+        };
         concertCard.innerHTML = `
             <h3>${concert.artist} - ${concert.title}</h3>
             <p>城市：${concert.city}</p>
@@ -731,9 +734,18 @@ function displayConcerts(concertList) {
     });
 }
 
-// 页面加载时显示所有演唱会
+// 页面加载时恢复搜索状态
 window.onload = () => {
-    displayConcerts(concerts);
+    const searchState = JSON.parse(sessionStorage.getItem('searchState'));
+    if (searchState) {
+        document.getElementById('searchInput').value = searchState.searchTerm;
+        document.getElementById('cityFilter').value = searchState.cityFilter;
+        document.getElementById('dateFilter').value = searchState.dateFilter;
+        searchConcerts();
+        window.scrollTo(0, searchState.scrollPosition);
+    } else {
+        displayConcerts(concerts);
+    }
 };
 
 // 在 script.js 中添加事件监听器
@@ -741,4 +753,9 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
     if (event.key === 'Enter') {
         searchConcerts();
     }
-}); 
+});
+
+// 添加清除搜索状态的函数
+function clearSearchState() {
+    sessionStorage.removeItem('searchState');
+} 

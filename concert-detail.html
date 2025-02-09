@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="home-button">
-            <button onclick="window.location.href='index.html'">返回主页</button>
+        <div class="nav-buttons">
+            <button onclick="clearSearchState(); window.location.href='index.html'">返回主页</button>
+            <button onclick="window.history.back()">返回上一页</button>
         </div>
         <div id="concertDetail" class="concert-detail">
             <!-- 详情内容将通过 JavaScript 动态生成 -->
