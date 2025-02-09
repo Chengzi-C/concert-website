@@ -376,4 +376,12 @@ h1 {
     .corner-image img {
         width: 60px;
     }
+}
+
+.disclaimer {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
 } 

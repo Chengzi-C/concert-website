@@ -14,7 +14,7 @@
         <h1>演唱会查询系统</h1>
         
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="输入艺人名称或城市..."> 
+            <input type="text" id="searchInput" placeholder="输入艺人名称或城市..." onkeypress="if(event.key === 'Enter') searchConcerts()">
             <button onclick="searchConcerts()">搜索</button>
         </div>
 

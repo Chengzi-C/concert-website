@@ -313,6 +313,126 @@ const concerts = [
         date: "2025.02.14-15",
         price: "617-2037",
         image: "https://example.com/xzq.jpg"
+    },
+    {
+        id: 32,
+        artist: "谢霆锋",
+        title: "Evolution Nic Live 2025演唱会",
+        city: "香港（已官宣）",
+        venue: "香港启德体育园主场馆",
+        date: "2025.04.25-26",
+        price: "HK$680-1380",
+        image: "https://example.com/xtf.jpg"
+    },
+    {
+        id: 33,
+        artist: "周深",
+        title: "2025世界巡回演唱会",
+        city: "伦敦（已官宣）",
+        venue: "待定",
+        date: "2025.02.14",
+        price: "待定",
+        image: "https://example.com/zs.jpg"
+    },
+    {
+        id: 34,
+        artist: "莫文蔚",
+        title: "「大秀一场」2025演唱会",
+        city: "苏州（已官宣）",
+        venue: "苏州奥林匹克体育中心体育场",
+        date: "2025.03.15 周六 19:00",
+        price: "399-1399",
+        image: "https://example.com/mww.jpg"
+    },
+    {
+        id: 35,
+        artist: "黄绮珊",
+        title: "「晚霞·不晚」2025巡回演唱会",
+        city: "成都（已官宣）",
+        venue: "高新区体育中心-体育馆",
+        date: "2025.03.22 周六 19:30",
+        price: "180-1686",
+        image: "https://example.com/hqs.jpg"
+    },
+    {
+        id: 36,
+        artist: "喻言",
+        title: "2025参演演唱会",
+        city: "温州（已官宣）",
+        venue: "温州奥体中心主体育场",
+        date: "时间延期待定",
+        price: "待定",
+        image: "https://example.com/yy.jpg"
+    },
+    {
+        id: 37,
+        artist: "石凯",
+        title: "2025参演演唱会",
+        city: "温州（已官宣）",
+        venue: "温州奥体中心主体育场",
+        date: "时间延期待定",
+        price: "380-1280",
+        image: "https://example.com/sk.jpg"
+    },
+    {
+        id: 38,
+        artist: "张靓颖",
+        title: "2025参演演唱会",
+        city: "青岛（已官宣）",
+        venue: "莱西市体育中心体育场",
+        date: "时间延期待定",
+        price: "280-980",
+        image: "https://example.com/zly.jpg"
+    },
+    {
+        id: 39,
+        artist: "袁一琦",
+        title: "2025巡回演唱会",
+        city: "广州（已官宣）",
+        venue: "广州亚运城综合体育馆",
+        date: "2025.04.19 周六",
+        price: "待定",
+        image: "https://example.com/yyq.jpg"
+    },
+    {
+        id: 40,
+        artist: "林忆莲",
+        title: "《回响 Resonance》2025巡回演唱会",
+        city: "深圳（已官宣）",
+        venue: "深圳湾体育中心春茧体育场",
+        date: "2025.02.22 周六 19:30",
+        price: "380-1280",
+        image: "https://example.com/lyl.jpg"
+    },
+    {
+        id: 41,
+        artist: "黄明昊",
+        title: "「渐入贾境」23岁生日系列企划",
+        city: "上海（已官宣）",
+        venue: "上海华润时代广场7楼",
+        date: "2025.02.14-02.19",
+        price: "待定",
+        image: "https://example.com/hmh.jpg"
+    },
+    {
+        id: 42,
+        artist: "周震南",
+        title: "2025参演演唱会",
+        city: "咸阳（已官宣）",
+        venue: "咸阳奥体中心停车场北侧",
+        date: "2025.03.29-03.30",
+        price: "298-997",
+        image: "https://example.com/zzn.jpg"
+    },
+    {
+        id: 43,
+        artist: "郑润泽",
+        title: "「漩涡人生」2025巡回演唱会",
+        city: "郑州（已官宣）",
+        venue: "郑州奥林匹克体育中心 洋河·梦之蓝体育馆",
+        date: "2025.03.15 周六 19:00",
+        price: "398-998",
+        image: "https://example.com/zrz.jpg"
     }
 ];
 
@@ -326,7 +446,7 @@ const tourDates = {
     2: [
         { city: "重庆（已官宣）", venue: "华熙LIVE·鱼洞·场馆", date: "2025.03.28-04.06" },
         { city: "深圳（洽谈中）", venue: "宝能广州国际体育演艺中心", date: "时间待定" },
-        { city: "成都（未开售）", venue: "东郊记忆", date: "2025年" }
+        { city: "成都（未开售）", venue: "东郊记忆", date: "时间待定" }
     ],
     3: [
         { city: "悉尼（已官宣）", venue: "Sydney Accor Stadium", date: "2025.02.22 周六 19:30" },
@@ -344,7 +464,15 @@ const tourDates = {
         { city: "巴黎（已官宣）", venue: "巴黎拉德芳斯体育馆", date: "2025.03.22 周六 20:00" },
         { city: "伦敦（已官宣）", venue: "The O2 / O2体育馆", date: "2025.03.11 周二 20:00" },
         { city: "墨尔本（已官宣）", venue: "Rod Laver Arena", date: "2025.04.11 周五 20:00" },
-        { city: "悉尼（已官宣）", venue: "Qudos Bank Arena", date: "2025.04.05 周六 20:00" }
+        { city: "悉尼（已官宣）", venue: "Qudos Bank Arena", date: "2025.04.05 周六 20:00" },
+        { city: "北京（未官宣）", venue: "待定", date: "2025.06.28-06.29" },
+        { city: "南宁（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "上海（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "武汉（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "广州（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "南京（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "福州（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "西安（未官宣）", venue: "洽谈中", date: "时间待定" }
     ],
     6: [
         { city: "南京（已官宣）", venue: "南京奥体中心体育场", date: "2025.03.29 周六 19:00" },
@@ -387,11 +515,24 @@ const tourDates = {
         { city: "武汉（未官宣）", venue: "待定", date: "2025.07.25-26" }
     ],
     10: [
-        { city: "福州（已官宣）", venue: "福州海峡奥林匹克体育中心体育场", date: "2025.02.22-02.23" }
+        { city: "福州（已官宣）", venue: "福州海峡奥林匹克体育中心体育场", date: "2025.02.22-02.23" },
+        { city: "青岛（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "南京（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "郑州（未官宣）", venue: "洽谈中", date: "时间待定" }
     ],
     11: [
+        { city: "香港（已官宣）", venue: "亚洲国际博览馆 Arena", date: "2025.02.07-02.09" },
         { city: "澳门（已官宣）", venue: "银河综艺馆", date: "2025.03.07-03.09" },
-        { city: "香港（已官宣）", venue: "亚洲国际博览馆 Arena", date: "2025.02.07-02.09" }
+        { city: "天津（未官宣）", venue: "待定", date: "2025.03.30-03.31" },
+        { city: "北京（未官宣）", venue: "待定", date: "2025.04.18-04.20" },
+        { city: "北京（未官宣）", venue: "待定", date: "2025.04.25-04.27" },
+        { city: "北京（未官宣）", venue: "待定", date: "2025.05.02-05.04" },
+        { city: "北京（未官宣）", venue: "待定", date: "2025.05.09-05.11" },
+        { city: "长沙（未官宣）", venue: "待定", date: "2025.05.11-05.12" },
+        { city: "深圳（未官宣）", venue: "待定", date: "2025.06.29-06.30" },
+        { city: "西安（未官宣）", venue: "待定", date: "2025.07.27-07.28" },
+        { city: "大连（未官宣）", venue: "待定", date: "时间待定" },
+        { city: "南京（未官宣）", venue: "待定", date: "时间待定" }
     ],
     12: [
         { city: "新加坡（已官宣）", venue: "星宇表演艺术中心 The Star Performing Arts Centre", date: "2025.02.21 周五 20:00" },
@@ -448,8 +589,10 @@ const tourDates = {
         { city: "杭州（未官宣）", venue: "洽谈中", date: "时间待定" }
     ],
     19: [
+        { city: "济南（已官宣）", venue: "济南奥林匹克体育中心体育馆", date: "2025.02.14-02.15" },
         { city: "上海（已官宣）", venue: "梅赛德斯-奔驰文化中心", date: "2025.03.01-03.02" },
-        { city: "济南（已官宣）", venue: "济南奥林匹克体育中心体育馆", date: "2025.02.14-02.15" }
+        { city: "杭州（已官宣）", venue: "洽谈中", date: "2025.03.15-03.16" },
+        { city: "武汉（已官宣）", venue: "洽谈中", date: "2025.03.29-03.30" }
     ],
     20: [
         { city: "南昌（已官宣）", venue: "南昌国际体育中心体育馆", date: "2025.03.15-03.16" }
@@ -511,25 +654,93 @@ const tourDates = {
     ],
     31: [
         { city: "新加坡（已官宣）", venue: "新加坡国家体育场 National Stadium, Singapore", date: "2025.02.14-15" }
+    ],
+    32: [
+        { city: "香港（已官宣）", venue: "香港启德体育园主场馆", date: "2025.04.25-26" },
+        { city: "深圳（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "广州（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "北京（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "西安（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "成都（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "武汉（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "重庆（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "杭州（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "南京（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "上海（未官宣）", venue: "洽谈中", date: "时间待定" }
+    ],
+    33: [
+        { city: "伦敦（已官宣）", venue: "待定", date: "2025.02.14" },
+        { city: "拉斯维加斯（已官宣）", venue: "待定", date: "2025.03.01" },
+        { city: "西雅图（已官宣）", venue: "待定", date: "2025.03.05" },
+        { city: "纽约（已官宣）", venue: "待定", date: "2025.03.14" },
+        { city: "多伦多（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "墨尔本（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "悉尼（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "吉隆坡（未官宣）", venue: "洽谈中", date: "时间待定" }
+    ],
+    34: [
+        { city: "苏州（已官宣）", venue: "苏州奥林匹克体育中心体育场", date: "2025.03.15 周六 19:00" }
+    ],
+    35: [
+        { city: "成都（已官宣）", venue: "高新区体育中心-体育馆", date: "2025.03.22 周六 19:30" }
+    ],
+    36: [
+        { city: "「龙娱·闪耀星空 音乐盛典第二季」温州（已官宣）", venue: "温州奥体中心主体育场", date: "时间延期待定", note: "「龙娱·闪耀星空 音乐盛典第二季」" },
+        { city: "「QQ音乐超级巅峰之夜」成都（已官宣）", venue: "成都东安湖体育公园主体育场", date: "2025.03.08-03.09", note: "「QQ音乐超级巅峰之夜」" }
+    ],
+    37: [
+        { city: "「龙娱·闪耀星空 音乐盛典第二季」温州（已官宣）", venue: "温州奥体中心主体育场", date: "时间延期待定", note: "「龙娱·闪耀星空 音乐盛典第二季」" },
+        { city: "「丝路音乐节」咸阳（已官宣）", venue: "咸阳奥体中心停车场北侧", date: "2025.03.29-03.30", note: "「丝路音乐节·咸阳站」" },
+        { city: "「QQ音乐超级巅峰之夜」成都（已官宣）", venue: "成都东安湖体育公园主体育场", date: "2025.03.08-03.09", note: "「QQ音乐超级巅峰之夜」" }
+    ],
+    38: [
+        { city: "「乐动莱音 群星演唱会」青岛（已官宣）", venue: "莱西市体育中心体育场", date: "时间延期待定", note: "「乐动莱音 群星演唱会」" }
+    ],
+    39: [
+        { city: "广州（已官宣）", venue: "广州亚运城综合体育馆", date: "2025.04.19 周六" }
+    ],
+    40: [
+        { city: "深圳（已官宣）", venue: "深圳湾体育中心春茧体育场", date: "2025.02.22 周六 19:30" },
+        { city: "厦门（已官宣）", venue: "厦门体育中心体育场", date: "2025.03.01 周六 19:00" },
+        { city: "南宁（已官宣）", venue: "广西体育中心体育场", date: "2025.03.08 周六 20:00" },
+        { city: "昆明（已官宣）", venue: "新亚洲体育城星耀体育场", date: "2025.03.22 周六 19:30" },
+        { city: "太原（已官宣）", venue: "山西体育中心体育场", date: "2025.05.31 周六 19:30" }
+    ],
+    41: [
+        { city: "上海（已官宣）", venue: "上海华润时代广场7楼", date: "2025.02.14-02.19", note: "生日主题痛楼 & 线下生趴 PART1「上海」\n2月15日有线下活动，到场均有精美周边领取（部分周边未公开，数量有限，领完为止）" }
+    ],
+    42: [
+        { city: "「丝路音乐节」咸阳（已官宣）", venue: "咸阳奥体中心停车场北侧", date: "2025.03.29-03.30", note: "「丝路音乐节·咸阳站」\n联动艺人：汪苏泷、魏晨、沙一汀、王栎鑫、王铮亮、颜人中、张远、尚雯婕、蒲熠星、石凯、苏菲花园、郭力行、赫兹乐队" },
+        { city: "「QQ音乐超级巅峰之夜」成都（已官宣）", venue: "成都东安湖体育公园主体育场", date: "2025.03.08-03.09", note: "「QQ音乐超级巅峰之夜」\n联动艺人：王源、汪苏泷、凤凰传奇、檀健次、伯远、段奥娟、希林娜依·高、黄子弘凡、蒋敦豪、刘宇、刘雨昕、蒲熠星、戚薇、TizzyT、卫兰、万妮达、yamy郭颖、姚琛、银河快递、张碧晨、张云雷、陈楚生、关浩德、何洁、黄誉博、陆虎、刘忻、孟慧圆、米卡MIKA、石凯、苏醒、王栎鑫、王铮亮、徐良、颜人中、喻言、早安、张远" }
+    ],
+    43: [
+        { city: "郑州（已官宣）", venue: "郑州奥林匹克体育中心 洋河·梦之蓝体育馆", date: "2025.03.15 周六 19:00" },
+        { city: "厦门（已官宣）", venue: "厦门奥林匹克体育中心-凤凰体育馆", date: "2025.03.22 周六 19:00" },
+        { city: "重庆（已官宣）", venue: "华熙LIVE·鱼洞·场馆", date: "2025.04.19 周六 19:00" }
     ]
 };
 
-function displayConcertDetail() {
-    console.log('URL参数:', concertId); // 调试：检查URL参数
+// 修改初始化方式
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const concertId = urlParams.get('id');
+    
+    console.log('URL参数:', concertId);
     const concert = concerts.find(c => c.id === parseInt(concertId));
-    console.log('找到的演唱会:', concert); // 调试：检查是否找到演唱会
+    console.log('找到的演唱会:', concert);
     
     if (!concert) {
-        console.log('未找到演唱会数据'); // 调试：记录未找到的情况
+        console.log('未找到演唱会数据');
         document.getElementById('concertDetail').innerHTML = '<p>未找到相关演唱会信息</p>';
         return;
     }
 
     const tourSchedule = tourDates[concert.id] || [];
-    console.log('巡演日程:', tourSchedule); // 调试：检查巡演数据
+    console.log('巡演日程:', tourSchedule);
     
     const detailHTML = `
         <div class="concert-header">
+            <p class="disclaimer">仅供参考，一切以官宣为准~</p>
             <h1>${concert.artist} - ${concert.title}</h1>
             <p class="price">参考票价：￥${concert.price}</p>
         </div>
@@ -549,9 +760,6 @@ function displayConcertDetail() {
         </div>
     `;
 
-    console.log('生成的HTML:', detailHTML); // 调试：检查生成的HTML
     document.getElementById('concertDetail').innerHTML = detailHTML;
     document.title = `${concert.artist} - ${concert.title} | 演唱会详情`;
-}
-
-window.onload = displayConcertDetail; 
+}); 
