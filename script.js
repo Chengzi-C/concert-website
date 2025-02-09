@@ -65,7 +65,10 @@ const tourDates = {
         { city: "武汉（未官宣）", venue: "待定", date: "2025.07.25-26" }
     ],
     10: [
-        { city: "福州（已官宣）", venue: "福州海峡奥林匹克体育中心体育场", date: "2025.02.22-02.23" }
+        { city: "福州（已官宣）", venue: "福州海峡奥林匹克体育中心体育场", date: "2025.02.22-02.23" },
+        { city: "青岛（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "南京（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "郑州（未官宣）", venue: "洽谈中", date: "时间待定" }
     ],
     11: [
         { city: "香港（已官宣）", venue: "亚洲国际博览馆 Arena", date: "2025.02.07-02.09" },
@@ -166,6 +169,18 @@ const tourDates = {
     ],
     39: [
         { city: "广州（已官宣）", venue: "广州亚运城综合体育馆", date: "2025.04.19 周六" }
+    ],
+    44: [
+        { city: "上海（已官宣）", venue: "MAO Livehouse", date: "2025.03.08" },
+        { city: "长沙（已官宣）", venue: "红节奏 LIVEHOUSE", date: "2025.03.15" },
+        { city: "厦门（已官宣）", venue: "福禧 Full House 厦门", date: "2025.03.22" },
+        { city: "成都（已官宣）", venue: "正火艺术中心6号馆", date: "2025.03.29" },
+        { city: "青岛（已官宣）", venue: "Downtown Live", date: "2025.04.12" },
+        { city: "北京（已官宣）", venue: "疆进酒·OMNI SPACE", date: "2025.04.18" },
+        { city: "天津（已官宣）", venue: "琉璃 SPACE", date: "2025.04.19" }
+    ],
+    45: [
+        { city: "长沙（已官宣）", venue: "湖南国际会展中心·芒果馆", date: "2025.02.22 周六 19:30" }
     ]
 };
 
@@ -600,6 +615,26 @@ const concerts = [
         date: "2025.03.15 周六 19:00",
         price: "398-998",
         image: "https://example.com/zrz.jpg"
+    },
+    {
+        id: 44,
+        artist: "XMASw吴骜",
+        title: "RED RAIN Live Tour Vol.2",
+        city: "上海（已官宣）",
+        venue: "MAO Livehouse",
+        date: "2025.03.08",
+        price: "188-288",
+        image: "https://example.com/wa.jpg"
+    },
+    {
+        id: 45,
+        artist: "黄誉博",
+        title: "梦寐之地演唱会-长沙站",
+        city: "长沙（已官宣）",
+        venue: "湖南国际会展中心·芒果馆",
+        date: "2025.02.22 周六 19:30",
+        price: "66-922",
+        image: "https://example.com/hyb.jpg"
     }
 ];
 
