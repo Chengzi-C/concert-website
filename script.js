@@ -34,7 +34,10 @@ const tourDates = {
         { city: "广州（未官宣）", venue: "洽谈中", date: "时间待定" },
         { city: "南京（未官宣）", venue: "洽谈中", date: "时间待定" },
         { city: "福州（未官宣）", venue: "洽谈中", date: "时间待定" },
-        { city: "西安（未官宣）", venue: "洽谈中", date: "时间待定" }
+        { city: "西安（未官宣）", venue: "洽谈中", date: "时间待定" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.06.28-06.29" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.07.04-07.06" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.07.11-07.13" }
     ],
     6: [
         { city: "南京（已官宣）", venue: "南京奥体中心体育场", date: "2025.03.29 周六 19:00" },
@@ -55,7 +58,7 @@ const tourDates = {
     ],
     9: [
         { city: "广州（已结束）", venue: "宝能广州国际体育演艺中心", date: "2024.12.30-2025.01.01" },
-        { city: "北京（已官宣）", venue: "待定", date: "2025.03.21-23" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.03.21-03.23" },
         { city: "长沙（未官宣）", venue: "待定", date: "2025.04.12-13" },
         { city: "合肥（未官宣）", venue: "待定", date: "2025.04.26-27" },
         { city: "南昌（未官宣）", venue: "待定", date: "2025.05.17-18" },
@@ -74,10 +77,10 @@ const tourDates = {
         { city: "香港（已官宣）", venue: "亚洲国际博览馆 Arena", date: "2025.02.07-02.09" },
         { city: "澳门（已官宣）", venue: "银河综艺馆", date: "2025.03.07-03.09" },
         { city: "天津（未官宣）", venue: "待定", date: "2025.03.30-03.31" },
-        { city: "北京（未官宣）", venue: "待定", date: "2025.04.18-04.20" },
-        { city: "北京（未官宣）", venue: "待定", date: "2025.04.25-04.27" },
-        { city: "北京（未官宣）", venue: "待定", date: "2025.05.02-05.04" },
-        { city: "北京（未官宣）", venue: "待定", date: "2025.05.09-05.11" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.04.18-04.20" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.04.25-04.27" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.02-05.04" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.09-05.11" },
         { city: "长沙（未官宣）", venue: "待定", date: "2025.05.11-05.12" },
         { city: "深圳（未官宣）", venue: "待定", date: "2025.06.29-06.30" },
         { city: "西安（未官宣）", venue: "待定", date: "2025.07.27-07.28" },
@@ -93,7 +96,8 @@ const tourDates = {
         { city: "王心凌", venue: "SUGAR HIGH 2.0 世界巡回演唱会", city: "合肥（已官宣）", date: "2025.04.19-04.20", price: "480-1680", image: "https://example.com/wxl.jpg" }
     ],
     14: [
-        { city: "孙燕姿", venue: "《就在日落以后》巡回演唱会", city: "上海（已官宣）", date: "2025.04.26/04.28", price: "480-1680", image: "https://example.com/syz.jpg" }
+        { city: "孙燕姿", venue: "《就在日落以后》巡回演唱会", city: "上海（已官宣）", date: "2025.04.26/04.28", price: "480-1680", image: "https://example.com/syz.jpg" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.06.13/06.15" }
     ],
     15: [
         { city: "毛不易", venue: "「冒险精神」巡回演唱会", city: "苏州（已官宣）", date: "2025.02.15 周六 19:00", price: "480-1580", image: "https://example.com/mby.jpg" }
@@ -102,7 +106,8 @@ const tourDates = {
         { city: "周兴哲（Eric）", venue: "Odyssey旅程巡回演唱会", city: "厦门（已官宣）", date: "2025.03.29 周六 19:00", price: "480-1180", image: "https://example.com/eric.jpg" }
     ],
     17: [
-        { city: "张惠妹", venue: "ASMR MAXXX巡回演唱会", city: "成都（已官宣）", date: "2025.03.22 周六 19:00", price: "380-1380", image: "https://example.com/amei.jpg" }
+        { city: "张惠妹", venue: "ASMR MAXXX巡回演唱会", city: "成都（已官宣）", date: "2025.03.22 周六 19:00", price: "380-1380", image: "https://example.com/amei.jpg" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.04.05-04.06" }
     ],
     18: [
         { city: "许嵩", venue: "2025「呼吸之野」巡回演唱会", city: "长沙（已官宣）", date: "2025.04.12 周六", price: "318-1618", image: "https://example.com/xs.jpg" }
@@ -181,6 +186,10 @@ const tourDates = {
     ],
     45: [
         { city: "长沙（已官宣）", venue: "湖南国际会展中心·芒果馆", date: "2025.02.22 周六 19:30" }
+    ],
+    46: [
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.23-05.25" },
+        { city: "北京（已官宣）", venue: "国家体育场鸟巢", date: "2025.05.30-06.01" }
     ]
 };
 
@@ -271,7 +280,7 @@ const concerts = [
         artist: "汪苏泷",
         title: "十万伏特 2025巡回演唱会",
         city: "北京（已官宣）",
-        venue: "待定",
+        venue: "国家体育场鸟巢",
         date: "2025.03.21-03.23",
         price: "380-1380",
         image: "https://example.com/wsl.jpg"
@@ -635,6 +644,16 @@ const concerts = [
         date: "2025.02.22 周六 19:30",
         price: "66-922",
         image: "https://example.com/hyb.jpg"
+    },
+    {
+        id: 46,
+        artist: "凤凰传奇",
+        title: "2025鸟巢演唱会",
+        city: "北京（已官宣）",
+        venue: "国家体育场鸟巢",
+        date: "2025.05.23-06.01",
+        price: "待定",
+        image: "https://example.com/fhcq.jpg"
     }
 ];
 
